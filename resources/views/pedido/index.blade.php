@@ -29,7 +29,7 @@
             
             @foreach ($pedidos as $pedido)
                 <tr>
-                    <td>{{ $pedido->id}}</td>
+                    <td>{{ $pedido->id }}</td>
                     <td>{{ \Carbon\Carbon::parse($pedido->data)->format('d/m/Y') }}</td>
                     <td>{{ $pedido->produtos }}</td>
                     <td>R$ {{ number_format($pedido->total, 2, ',', '.') }}</td>
