@@ -20,6 +20,7 @@ class PedidoController extends Controller
                         (SELECT GROUP_CONCAT(CONCAT(quantidade,' ', nome) SEPARATOR ', ') FROM itens 
                         INNER JOIN produtos ON itens.id_produto = produtos.id 
                         WHERE pedidos.id = itens.id_pedido) AS produtos"))
+                    ->orderBy('id', 'desc')
                     ->paginate(5);
 
         return view('pedido.index',compact('pedidos'))
