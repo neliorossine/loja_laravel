@@ -28,7 +28,7 @@
             </tr>
             @foreach ($produtos as $produto)
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{ $produto->id }}</td>
                     <td>{{ $produto->SKU }}</td>
                     <td>{{ $produto->nome }}</td>
                     <td>R$ {{ number_format($produto->preco, 2, ',', '.') }}</td>
