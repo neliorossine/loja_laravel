@@ -8,4 +8,3 @@ Projeto teste de operação básica de CRUD (Criar, Ler, Atualizar, Excluir) usa
 - Edite o arquivo .env com seus dados do banco.
 - Execute 'php artisan migrate'
 - Execute 'php artisan serve'
-"# loja" 
